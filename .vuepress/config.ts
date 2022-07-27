@@ -5,6 +5,7 @@ import recoTheme from "vuepress-theme-reco";
 export default defineUserConfig({
   title: "想走过亚洲的熊",
   description: "Just playing around",
+
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.jpg",
@@ -12,6 +13,7 @@ export default defineUserConfig({
     docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
     docsBranch: "main",
     docsDir: "example",
+    catalogTitle: "标题目录",
     autoSetCategory: true, // 自动设置分类
     // autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
     lastUpdatedText: "上次更新时间",
@@ -35,9 +37,9 @@ export default defineUserConfig({
       ],
     },
     navbar: [
-      { text: "指南", link: "/docs/guide.md" },
-      { text: "分类", link: "/categories/reco/1/" },
-      { text: "标签", link: "/tags/tag1/1/" },
+      { text: "指南", link: "/docs/guide" },
+      { text: "分类", link: "/categories/html5/1/" },
+      { text: "标签", link: "/tags/html5/1/" },
       {
         text: "HTML5",
         children: [

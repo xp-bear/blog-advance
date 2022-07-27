@@ -1,7 +1,9 @@
 ---
 title: 我的html5的文章
 categories:
-  - html5教程
+  - html5
+tags:
+  - html5
 ---
 
 # 哈哈
