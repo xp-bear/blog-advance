@@ -15,9 +15,10 @@ export default defineUserConfig({
     docsDir: "example",
     catalogTitle: "标题目录",
     autoSetCategory: true, // 自动设置分类
-    // autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
+    autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
     lastUpdatedText: "上次更新时间",
     // series 为原 sidebar
+
     series: {
       "/docs/theme-reco/": [
         {
@@ -29,22 +30,30 @@ export default defineUserConfig({
           children: ["api", "plugin"],
         },
       ],
-      "/docs/html5/": [
+      //vue3 文章
+      "/docs/front/vue3": [
         {
           text: "文章导航",
-          children: ["indexd", "ha"],
+          children: ["home"],
+        },
+      ],
+      //js 文章
+      "/docs/front/js": [
+        {
+          text: "文章导航",
+          children: ["home"],
         },
       ],
     },
     navbar: [
-      { text: "指南", link: "/docs/guide" },
-      { text: "分类", link: "/categories/html5/1/" },
-      { text: "标签", link: "/tags/html5/1/" },
+      // { text: "指南", link: "/docs/guide" },
+      // { text: "分类", link: "/categories/docs/1/" },
+      // { text: "标签", link: "/tags/docs/1/" },
       {
-        text: "HTML5",
+        text: "前端",
         children: [
-          { text: "第一", link: "/docs/html5/indexd" },
-          { text: "哈哈链接", link: "/blogs/html5/haha.md" },
+          { text: "VUE3教程", link: "/docs/front/vue3/home" },
+          { text: "JS教程", link: "/docs/front/js/home" },
         ],
       },
       {
@@ -68,20 +77,7 @@ export default defineUserConfig({
           { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
         ],
       },
-      {
-        text: "Vue",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
-      {
-        text: "React",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+
       {
         text: "Python",
         children: [
