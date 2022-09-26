@@ -15,7 +15,7 @@ export default defineUserConfig({
     docsDir: "example",
     catalogTitle: "标题目录",
     autoSetCategory: true, // 自动设置分类
-    autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
+    // autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
     lastUpdatedText: "上次更新时间",
     // series 为原 sidebar
 
@@ -44,9 +44,31 @@ export default defineUserConfig({
           children: ["home"],
         },
       ],
+      //后端文章
+      "/docs/end": [
+        {
+          text: "文章导航",
+          children: ["home"],
+        },
+      ],
+      //python文章
+      "/docs/python": [
+        {
+          text: "文章导航",
+          children: ["home"],
+        },
+      ],
+      //python文章
+      "/docs/interview": [
+        {
+          text: "文章导航",
+          children: ["home"],
+        },
+      ],
     },
     navbar: [
-      // { text: "指南", link: "/docs/guide" },
+      { text: "首页", link: "/" },
+      { text: "指南", link: "/docs/guide" },
       // { text: "分类", link: "/categories/docs/1/" },
       // { text: "标签", link: "/tags/docs/1/" },
       {
@@ -57,33 +79,16 @@ export default defineUserConfig({
         ],
       },
       {
-        text: "CSS3",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
+        text: "后端",
+        children: [{ text: "JAVA教程", link: "/docs/end/home" }],
       },
-      {
-        text: "JavaScript",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
-      {
-        text: "TypeScript",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
-
       {
         text: "Python",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
+        children: [{ text: "Python教程", link: "/docs/python/home" }],
+      },
+      {
+        text: "前端面试题",
+        children: [{ text: "面试题教程", link: "/docs/interview/home" }],
       },
       {
         text: "算法",

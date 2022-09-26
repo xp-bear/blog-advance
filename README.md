@@ -8,7 +8,7 @@ modules: # 指定首页展示模块
 banner: # banner 模块的配置
   heroText: 想走过亚洲的熊
   tagline: 在这个荒唐的世界，没什么会是永远不变的，包括我们遇到的麻烦。
-  heroImage: /1.png
+  heroImage: /user2.png
   heroImageStyle:
     maxWidth: 200px
     margin: 0 auto 2rem
@@ -18,7 +18,7 @@ banner: # banner 模块的配置
 bannerBrand: # bannerBrand 模块的配置
   heroText: 想走过亚洲的熊
   tagline: 在这个荒唐的世界，没什么会是永远不变的，包括我们遇到的麻烦。
-  heroImage: /1.png
+  heroImage: /user2.png
   heroImageStyle:
     maxWidth: 200px
     margin: 0 auto 2rem
