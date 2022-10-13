@@ -53,6 +53,12 @@ export default defineUserConfig({
           children: ["many"],
         },
       ],
+      "/docs/vue/": [
+        {
+          text: "文章导航",
+          children: ["1"],
+        },
+      ],
     },
     navbar: [
       { text: "指南", link: "/docs/guide" },
@@ -63,6 +69,7 @@ export default defineUserConfig({
         children: [
           { text: "html5教程", link: "/docs/html5/1" },
           { text: "css3教程", link: "/docs/css3/1" },
+          { text: "vue教程", link: "/docs/vue/1" },
           // { text: "html5教程", link: "/blogs/html5/haha.md" },
         ],
       },
