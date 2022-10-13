@@ -13,7 +13,7 @@ export default defineUserConfig({
     docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
     docsBranch: "main",
     docsDir: "example",
-    catalogTitle: "标题目录",
+    catalogTitle: "侧边导航",
     autoSetCategory: true, // 自动设置分类
     // autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
     lastUpdatedText: "上次更新时间",
@@ -59,6 +59,12 @@ export default defineUserConfig({
           children: ["1"],
         },
       ],
+      "/docs/python/flask/": [
+        {
+          text: "文章导航",
+          children: ["1", "2"],
+        },
+      ],
       "/docs/vue/": [
         {
           text: "文章导航",
@@ -75,7 +81,9 @@ export default defineUserConfig({
         children: [
           { text: "html5教程", link: "/docs/html5/1" },
           { text: "css3教程", link: "/docs/css3/1" },
+          { text: "javascript教程", link: "#" },
           { text: "vue教程", link: "/docs/vue/1" },
+          { text: "react教程", link: "#" },
           // { text: "html5教程", link: "/blogs/html5/haha.md" },
         ],
       },
@@ -84,6 +92,7 @@ export default defineUserConfig({
         children: [
           { text: "多线程教程", link: "/docs/python/many/1" },
           { text: "django教程", link: "/docs/python/django/1" },
+          { text: "flask教程", link: "/docs/python/flask/1" },
         ],
       },
       {
@@ -99,6 +108,7 @@ export default defineUserConfig({
       },
     ],
     bulletin: {},
+    head: [["link", { rel: "stylesheet", href: "./styles/index.css" }]],
   }),
   plugins: [vue()],
 });
