@@ -6,6 +6,25 @@ tags:
   - 计划
 ---
 
+## 代码组
+
+:::: code-group
+::: code-group-item FOO
+
+```js
+const foo = "foo";
+```
+
+:::
+::: code-group-item BAR
+
+```js
+const bar = "bar";
+```
+
+:::
+::::
+
 ## 第一阶段:
 
 完成 Vue3+TypeScript 的 coderwhy 的课程。

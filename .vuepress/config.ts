@@ -47,6 +47,12 @@ export default defineUserConfig({
           children: ["plan"],
         },
       ],
+      "/docs/python/many/": [
+        {
+          text: "文章导航",
+          children: ["many"],
+        },
+      ],
     },
     navbar: [
       { text: "指南", link: "/docs/guide" },
@@ -63,7 +69,7 @@ export default defineUserConfig({
       {
         text: "Python教程",
         children: [
-          { text: "测试一", link: "#" },
+          { text: "多线程", link: "/docs/python/many/many" },
           { text: "测试二", link: "#" },
         ],
       },
