@@ -18,7 +18,6 @@ export default defineUserConfig({
     // autoAddCategoryToNavbar: true, // 自动将首页、分类和标签添加至头部导航条
     lastUpdatedText: "上次更新时间",
     // series 为原 sidebar
-
     series: {
       "/docs/theme-reco/": [
         {
@@ -30,72 +29,54 @@ export default defineUserConfig({
           children: ["api", "plugin"],
         },
       ],
-      //vue3 文章
-      "/docs/front/vue3": [
+      "/docs/html5/": [
         {
           text: "文章导航",
-          children: ["home"],
+          children: ["1", "2"],
         },
       ],
-      //js 文章
-      "/docs/front/js": [
+      "/docs/css3/": [
         {
           text: "文章导航",
-          children: ["home"],
+          children: ["1", "2"],
         },
       ],
-      //后端文章
-      "/docs/end": [
+      "/docs/other/": [
         {
           text: "文章导航",
-          children: ["home"],
-        },
-      ],
-      //python文章
-      "/docs/python": [
-        {
-          text: "文章导航",
-          children: ["home"],
-        },
-      ],
-      //python文章
-      "/docs/interview": [
-        {
-          text: "文章导航",
-          children: ["home"],
+          children: ["plan"],
         },
       ],
     },
     navbar: [
-      { text: "首页", link: "/" },
       { text: "指南", link: "/docs/guide" },
-      // { text: "分类", link: "/categories/docs/1/" },
-      // { text: "标签", link: "/tags/docs/1/" },
+      { text: "分类", link: "/categories/html5/1/" },
+      { text: "标签", link: "/tags/html5/1/" },
       {
-        text: "前端",
+        text: "前端教程",
         children: [
-          { text: "VUE3教程", link: "/docs/front/vue3/home" },
-          { text: "JS教程", link: "/docs/front/js/home" },
+          { text: "html5教程", link: "/docs/html5/1" },
+          { text: "css3教程", link: "/docs/css3/1" },
+          // { text: "html5教程", link: "/blogs/html5/haha.md" },
         ],
       },
       {
-        text: "后端",
-        children: [{ text: "JAVA教程", link: "/docs/end/home" }],
-      },
-      {
-        text: "Python",
-        children: [{ text: "Python教程", link: "/docs/python/home" }],
-      },
-      {
-        text: "前端面试题",
-        children: [{ text: "面试题教程", link: "/docs/interview/home" }],
-      },
-      {
-        text: "算法",
+        text: "Python教程",
         children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+          { text: "测试一", link: "#" },
+          { text: "测试二", link: "#" },
         ],
+      },
+      {
+        text: "后端教程",
+        children: [
+          { text: "测试一", link: "#" },
+          { text: "测试二", link: "#" },
+        ],
+      },
+      {
+        text: "进阶计划",
+        children: [{ text: "2022年计划", link: "/docs/other/plan" }],
       },
     ],
     bulletin: {},

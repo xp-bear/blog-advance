@@ -11,7 +11,8 @@ banner: # banner 模块的配置
   heroImage: /user2.png
   heroImageStyle:
     maxWidth: 200px
-    margin: 0 auto 2rem
+    padding: 5rem 0 0 0
+    margin: 0rem auto 2rem
   bgImage: /bg.svg
   bgImageStyle:
     height: 450px
@@ -21,7 +22,8 @@ bannerBrand: # bannerBrand 模块的配置
   heroImage: /user2.png
   heroImageStyle:
     maxWidth: 200px
-    margin: 0 auto 2rem
+    padding: 5rem 0 0 0
+    margin: 0rem auto 2rem
   bgImage: /bg.svg
   bgImageStyle:
     height: 450px
