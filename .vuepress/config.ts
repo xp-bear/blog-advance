@@ -1,11 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
+import vue from "@vitejs/plugin-vue";
 
 export default defineUserConfig({
   title: "想走过亚洲的熊",
   description: "Just playing around",
-
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.jpg",
@@ -50,7 +50,13 @@ export default defineUserConfig({
       "/docs/python/many/": [
         {
           text: "文章导航",
-          children: ["many"],
+          children: ["1"],
+        },
+      ],
+      "/docs/python/django/": [
+        {
+          text: "文章导航",
+          children: ["1"],
         },
       ],
       "/docs/vue/": [
@@ -76,8 +82,8 @@ export default defineUserConfig({
       {
         text: "Python教程",
         children: [
-          { text: "多线程", link: "/docs/python/many/many" },
-          { text: "测试二", link: "#" },
+          { text: "多线程教程", link: "/docs/python/many/1" },
+          { text: "django教程", link: "/docs/python/django/1" },
         ],
       },
       {
@@ -94,4 +100,5 @@ export default defineUserConfig({
     ],
     bulletin: {},
   }),
+  plugins: [vue()],
 });
